@@ -7,3 +7,18 @@ groups:
         output:
           location: local-file-system
           path: ../generated/typescript
+      - name: fernapi/fern-go-sdk
+        version: 0.9.2
+        output:
+          location: local-file-system
+          path: ../generated/go
+      - name: fernapi/fern-java-sdk
+        version: 0.5.15
+        output:
+          location: local-file-system
+          path: ../generated/java
+      - name: fernapi/fern-python-sdk
+        version: 0.7.2
+        output:
+          location: local-file-system
+          path: ../generated/python

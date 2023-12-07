@@ -59,6 +59,7 @@ class BenJammingReillyApiClient {
                 url: (0, url_join_1.default)(yield core.Supplier.get(this._options.environment), "s3"),
                 method: "POST",
                 headers: {
+                    "X-API-Key": yield core.Supplier.get(this._options.apiKey),
                     "X-Fern-Language": "JavaScript",
                 },
                 contentType: "application/json",

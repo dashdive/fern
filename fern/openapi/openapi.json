@@ -7,6 +7,7 @@
         "summary": "S3 Event Notification",
         "description": "This endpoint receives notifications for events happening in an S3 bucket, like file uploads.",
         "operationId": "receiveS3Event",
+        "security": [{ "ApiKeyAuth": [] }],
         "requestBody": {
           "required": true,
           "content": {
@@ -34,6 +35,9 @@
     }
   },
   "components": {
+    "securitySchemes": {
+      "ApiKeyAuth": { "type": "apiKey", "in": "header", "name": "X-API-Key" }
+    },
     "schemas": {
       "S3Event": {
         "discriminator": { "propertyName": "action" },

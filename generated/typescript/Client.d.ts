@@ -6,6 +6,7 @@ import * as BenJammingReillyApi from "./api";
 export declare namespace BenJammingReillyApiClient {
     interface Options {
         environment: core.Supplier<string>;
+        apiKey: core.Supplier<string>;
     }
     interface RequestOptions {
         timeoutInSeconds?: number;
